@@ -11,6 +11,16 @@
     </header>
     <main>
         <p>FORM</p>
+        <p>{{message}}</p>
+        <form action="." method="post">{% csrf_token %}
+            {{ form.as_p }}
+
+            <input type="submit" value="Cadastrar">
+        </form>
+        <br>
+        <div>
+            <a href="/clientes/listar_clientes">Listar clientes</a>
+        </div>
     </main>
 </body>
 </html>

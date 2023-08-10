@@ -1,5 +1,5 @@
-from rest_framework import viewsets, routers, serializers
-from .models import Cliente
+from rest_framework import serializers
+from cliente.models import Cliente
 
 class ClienteSerializer(serializers.ModelSerializer):
     class Meta:
